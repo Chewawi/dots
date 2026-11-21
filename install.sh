@@ -12,11 +12,7 @@ dots=$(cd "$(dirname "$0")" && pwd -P)
 backup="$HOME/dots-backup"
 
 run() {
-	if [ -n "$dry" ]; then
-		echo "would: $*"
-	else
-		"$@"
-	fi
+	[ -n "$dry" ] || "$@"
 }
 
 cd "$dots/home"
