@@ -1,0 +1,42 @@
+[include]
+files = ["binds.toml", "rules.toml", "scratchpads.toml"]
+
+[include.optional]
+files = ["noctalia.toml"]
+
+[general]
+autostart = [
+  "gnome-keyring-daemon --start --components=secrets",
+  "noctalia",
+]
+
+[appearance]
+border_width = 0
+corner_radius = 17
+prefer_no_csd = true
+
+[appearance.blur]
+radius = 3
+
+[input.keyboard]
+layout = "us,es"
+numlock_toggle = true
+
+[input.touchpad]
+tap = true
+natural_scroll = true
+
+[input.mouse]
+accel_profile = "flat"
+
+[layout]
+gap = 12
+extent_presets = [0.333, 0.5, 0.667]
+
+[layout.scrolling]
+center_focused = "never"
+
+[hot_corners.top_left]
+enabled = true
+delay_ms = 100
+action = "overview-open"

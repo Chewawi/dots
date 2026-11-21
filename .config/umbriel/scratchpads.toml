@@ -1,0 +1,33 @@
+[[scratchpad]]
+name = "terminal"
+spawn_when_empty = "foot --app-id scratchpad-terminal"
+hide_when_empty = true
+
+[[window_rule]]
+match.app_id = "^scratchpad-terminal$"
+default_scratchpad = "terminal"
+default_focused = true
+default_floating_size_px = { width = 900, height = 500 }
+
+[[scratchpad]]
+name = "music"
+spawn_when_empty = "flatpak run io.github.nolight132.sonora"
+hide_when_empty = true
+
+[[window_rule]]
+match.app_id = "^(sonora|io\\.github\\.nolight132\\.sonora)$"
+default_scratchpad = "music"
+default_focused = false
+default_position = { x = 12, y = 12, anchor = "bottom_right" }
+default_floating_size_px = { width = 660, height = 460 }
+
+[[scratchpad]]
+name = "discord"
+spawn_when_empty = "flatpak run dev.vencord.Vesktop"
+hide_when_empty = true
+
+[[window_rule]]
+match.app_id = "^(vesktop|dev\\.vencord\\.Vesktop)$"
+default_scratchpad = "discord"
+default_focused = true
+default_floating_size_px = { width = 1150, height = 680 }
