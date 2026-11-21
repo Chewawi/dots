@@ -8,8 +8,9 @@ My Chimera Linux desktop: Umbriel, Noctalia and a few small tools.
 
 ## Showcase
 
-https://github.com/user-attachments/assets/REPLACE_ME
-
+<img src="./assets/showcase.png">
+<img src="./assets/sonora.png">
+    
 ## Setup
 
 | | |
